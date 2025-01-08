@@ -1,0 +1,211 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Malik Wensman} \\ \vspace{1pt}
+    \small 763-313-0935 $|$ \href{mailto:malikadidw@gmail.com}{\underline{malikadidw@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/malik-diallo-wensman-989041260/}{\underline{linkedin.com/in/malik-diallo-wensman-989041260/}} $|$
+    \href{https://github.com/mdw223}{\underline{github.com/mdw223}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {NC State University}{Raleigh, NC}
+      {Bachelor Degree in Computer Science}{Aug. 2022 -- Present}
+      \resumeItem{Year: Junior. Expected Graduation: May 2026. GPA: 3.71. On the Dean's List Of Achievement.}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Engineering Intern}{05/2023 - 07/2023}
+      {NC Soil and Water Conservation Division}{Raleigh, NC}
+      \resumeItemListStart
+        \resumeItem{Mapped watersheds using GIS software like ArcMap}
+        \resumeItem{Calculated water runoff in various terrains and land uses, utilizing EFH-2 for flood prevention and soil conservation efforts}
+        \resumeItem{Collaborated on the design and evaluation of ponds for agricultural or conservation purposes, using WinPond and Civil 3D}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Math Tutor}{Sep 2022 – July 2024}
+      {Mathnasium}{Garner, NC}
+      \resumeItemListStart
+        \resumeItem{Managed and taught up to 3 students at a time, personalizing instruction to meet individual learning needs for diverse age groups from Pre-K to college.}
+        \resumeItem{Fostered an engaging and supportive environment, motivating students to develop a positive attitude toward math and a growth mindset.}
+    \resumeItemListEnd
+    \textbf{Other work experience}{: Dickison Low Voltage (Electrical Wiring
+Assistant), Grade Potential Tutoring (Math and French Tutor), Blaze Pizza, Walgreens}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{PackHealth (EHR) software} $|$ \emph{Java, Data Structures, Algorithms}}{10/2024 - 11/2024}
+          \resumeItemListStart
+            \resumeItem{Developed a secure user activity logging system that complies with new cybersecurity standards,}
+            \resumeItem{designed algorithms and implemented data structures.}
+            \resumeItem{Conducted performance analysis and tested to ensure efficiency.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{FEDD DAY 2023 Entrepreneurship Competition} $|$ \emph{Solidworks, 3D Printing, Presentation}}{01/2023 - 05/2023}
+          \resumeItemListStart
+            \resumeItem{Team Won the FEDD DAY 2023 Entrepreneurship Competition, designed a Device Holder using SolidWorks and 3D Printing}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C++, SQL, HTML} \\
+     \textbf{Knowledge/Skills}{: Testing/Debugging, Object-Oriented Design, Performance Analysis, Data Structures, Algorithms, Data Science, Database Management} \\
+     \textbf{Developer Tools}{: Git, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+     % \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+    }}
+ \end{itemize}
+ 
+%-----------Clubs-----------
+\section{Club Engagement}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{ColorStack}{: As an active member of ColorStack, I engage in initiatives supporting Black and Latinx students in technology by networking, participating in professional development, collaborating on technical projects, and advocating for diversity and inclusion.} \\
+     \textbf{NSBE (National Society of Black Engineers)}{: As an active NSBE member, I engage in workshops, networking, and projects to empower Black engineers, promote diversity in STEM, and support academic excellence, career readiness, and community outreach.}
+    }}
+ \end{itemize}
+ 
+
+
+%-------------------------------------------
+\end{document}
