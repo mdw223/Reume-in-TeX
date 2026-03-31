@@ -1,0 +1,221 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+% 3 arguments: #1 = bold title line, #2 = plain subtitle left, #3 = plain subtitle right
+\newcommand{\resumeSubheading}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} \\
+      \small #2 & \small #3 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Malik Wensman} \\ \vspace{1pt}
+    \small 763-313-0935 $|$ \href{mailto:malik.code@proton.me}{\underline{malik.code@proton.me}} $|$
+    \href{https://www.linkedin.com/in/malik-wensman/}{\underline{linkedin.com/in/malik-wensman/}} $|$
+    \href{https://github.com/mdw223}{\underline{github.com/mdw223}}
+    \small \\ My Portfolio:
+    \href{https://mdw223.github.io/malik-portfolio/}{\underline{mdw223.github.io/malik-portfolio/}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {NC State University $|$ Expected Graduation -- December 2026}
+      {Bachelor of Science in Computer Science, GPA: 3.71}
+      {Raleigh, NC}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Full-Stack Software Engineer $|$ Axiom Software $|$ Enterprise Startup $|$ 02/2025 -- 02/2026}
+      {Axiom Software | Startup CRM Software Company | Cary, NC}
+      {}
+      \resumeItemListStart
+        \resumeItem{Built Gmail and Outlook integration with OAuth 2.0 authentication, automated email campaigns, and real-time email, contact, and calendar synchronization using REST APIs, Google Pub/Sub webhooks, and Hangfire background job processing}
+        \resumeItem{Delivered enterprise-level calendar integrations for Google Calendar, Outlook Calendar, and Calendly, enabling users to view, create, and manage events directly within the Axiom Workspace CRM}
+        \resumeItem{Implemented Calendly webhook integration with HMAC signature verification, full event lifecycle management (create, reschedule, cancel), and automated contact creation for seamless meeting scheduling}
+        \resumeItem{Developed comprehensive favorites system across CRM entities using Angular, C\#, and SQL Server, implementing star-based UI with Material Design and user-scoped database architecture}
+        \resumeItem{Engineered drag-and-drop prospect list management system with pagination, sort order persistence, and contact search functionality using Angular and RESTful APIs}
+        \resumeItem{Authored automated front-end unit and integration tests using Jest, achieving 80\%+ line and statement code coverage across critical UI components and service layers}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------Technical SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C\#, TypeScript, JavaScript, Go, Python, Java, HTML, CSS/SCSS} \\
+     \textbf{Frameworks \& Technologies}{: Angular, React, .NET Core, ASP.NET Web API, Node.js, Bootstrap} \\
+     \textbf{DevOps \& Cloud}{: Docker, Docker Compose, Google Cloud, Azure, Hangfire, CI/CD} \\
+     \textbf{Databases}{: SQL Server, PostgreSQL, MySql} \\
+     \textbf{APIs \& Integration}{: REST APIs, Gmail API, Google Calendar API, Microsoft Graph API, Calendly API, OAuth 2.0, Webhooks, Pub/Sub, n8n, Evolution API} \\
+     \textbf{Testing}{: Jest, Unit Testing, Integration Testing, Test Coverage Analysis} \\
+     \textbf{Developer Tools}{: Git, GitHub, Visual Studio, VS Code, Postman, Azure DevOps, Jenkins} \\
+     \textbf{Core Skills}{: Full-Stack Development, API Integration, Database Design, Agile/Scrum, Open Source Development}
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Enterprise Calendar Integration Suite} $|$ \emph{C\#, Google, Microsoft, Calendly API, Angular}}{10/2025 -- 12/2025}
+          \resumeItemListStart
+            \resumeItem{Architected and delivered full enterprise-level calendar integrations for Google Calendar, Outlook Calendar, and Calendly within a production CRM, enabling unified event management across platforms}
+            \resumeItem{Implemented bidirectional sync with OAuth 2.0 and token refresh flows, supporting event creation, editing, cancellation, and rescheduling from a single CRM interface}
+            \resumeItem{Built webhook-driven real-time update pipeline for live calendar event propagation and conflict detection}
+            \resumeItem{Designed normalized SQL Server schema to persist multi-provider calendar data with user-scoped access control}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Islamic Calendar Sync} $|$ \emph{React, JavaScript, Docker Compose $|$ Open Source, Full-Stack}}{01/2026 -- Present}
+          \resumeItemListStart
+            \resumeItem{Built an open-source full-stack web application that syncs Islamic calendar events (Hijri dates, prayer times, holidays) with users' personal calendars via ICS file generation and subscription}
+            \resumeItem{Designed a React front-end with dynamic event filtering and a RESTful API back-end for ICS feed generation and calendar data management}
+            \resumeItem{Containerized the full application stack with Docker Compose for reproducible local development and straightforward self-hosted deployment}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{OpenDI Model Hub -- Senior Design} $|$ \emph{Go, React, Python, Docker}}{01/2026 -- Present}
+          \resumeItemListStart
+            \resumeItem{Leading full-stack development of a Docker Hub-inspired platform for sharing, versioning, and managing OpenDI-compliant decision models as a senior capstone project}
+            \resumeItem{Built a Go REST API back-end with model registry, versioning logic, and user authentication; React front-end with model browsing, search, and upload workflows}
+            \resumeItem{Developed a companion Python CLI tool enabling developers to push, pull, and manage decision models directly from the terminal against the hosted registry}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{NC Triangle Muslims -- WhatsApp Events Automation} $|$ \emph{n8n, React, JavaScript, Docker}}{01/2026 -- Present}
+          \resumeItemListStart
+            \resumeItem{Built an end-to-end event automation pipeline using n8n workflows and the Evolution API to detect, parse, and publish community events from a WhatsApp group to the NC Triangle Muslims website automatically}
+            \resumeItem{Designed natural language parsing logic to extract event title, date, time, and description from unstructured WhatsApp messages and map them to structured website data}
+            \resumeItem{Containerized the automation stack with Docker for reliable self-hosted deployment; integrated with a React front-end to display live event listings}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Calendly Integration \& Webhook Processing} $|$ \emph{C\#, Calendly API, Azure, Webhooks}}{07/2025 -- 09/2025}
+          \resumeItemListStart
+            \resumeItem{Built complete Calendly integration with webhook subscription management and HMAC secure signature verification}
+            \resumeItem{Created comprehensive event lifecycle management handling creation, rescheduling, and cancellation workflows}
+            \resumeItem{Developed contact matching algorithms with automatic contact creation and deduplication logic}
+            \resumeItem{Implemented activity tracking system for meeting scheduling analytics and management reporting}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Gmail Integration \& Email Campaign System} $|$ \emph{Gmail API, OAuth 2.0, Hangfire, Pub/Sub}}{05/2025 -- 08/2025}
+          \resumeItemListStart
+            \resumeItem{Developed full Gmail integration with OAuth 2.0 authentication flow and automated refresh token management}
+            \resumeItem{Built automated email campaign system with template parsing, dynamic personalization, and delayed scheduling}
+            \resumeItem{Implemented real-time email synchronization using Google Pub/Sub webhooks and Azure cloud deployment}
+            \resumeItem{Created scalable background job processing with Hangfire for delayed campaign execution and contact syncing}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+              {\textbf{Interactive Prospect Management Dashboard} $|$ \emph{Angular, SQL, REST APIs}}{03/2025 - 05/2025}
+              \resumeItemListStart
+                \resumeItem{Transformed static prospect lists into dynamic, interactive interfaces with pagination}
+                \resumeItem{Implemented drag-and-drop reordering functionality with real-time database updates}
+                \resumeItem{Built sophisticated order management system with automatic position shifting}
+                \resumeItem{Created seamless integration between list and card view modes}
+                \resumeItem{Developed contact search and addition functionality with autocomplete}
+                \resumeItem{Designed responsive UI components using Angular Material with custom SCSS styling}
+              \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Favorites System Implementation} $|$ \emph{Angular, C\#, SQL Server, Material Design}}{02/2025}
+          \resumeItemListStart
+            \resumeItem{Designed comprehensive favorites system across multiple entities including campaigns, lists, contacts, and companies}
+            \resumeItem{Created intuitive star-based UI with hover effects and visual feedback for enhanced user experience}
+            \resumeItem{Built complete API chain from Angular frontend to C\# backend controllers with SQL database integration}
+            \resumeItem{Implemented user-level favorites using junction tables to ensure scalable multi-user support}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
