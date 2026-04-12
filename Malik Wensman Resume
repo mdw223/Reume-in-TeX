@@ -1,0 +1,153 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Malik Wensman} \\ \vspace{1pt}
+    \small 910-668-6198 $|$ \href{mailto:malik.code@proton.me}{\underline{malik.code@proton.me}} $|$
+    \href{https://www.linkedin.com/in/malik-wensman/}{\underline{linkedin.com/in/malik-wensman/}} $|$
+    \href{https://github.com/mdw223}{\underline{github.com/mdw223}} \\
+    \href{https://mdw223.github.io/malik-portfolio/}{\underline{mdw223.github.io/malik-portfolio/}}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\textbf{Full-Stack Software Intern} $|$ \emph{Axiom Workspace | Enterprise CRM Startup}}
+      {02/2025 -- Present}
+      {Axiom Software | Startup CRM Software Company}{Cary, NC}
+      \resumeItemListStart
+        \resumeItem{Built Gmail and Outlook integration with OAuth 2.0 authentication, automated email campaigns, and real-time email, contact, and calendar synchronization using APIs, Pub/Sub webhooks, and Hangfire background processing}
+        \resumeItem{Implemented Calendly webhook integration with secure signature verification, event lifecycle management, and automated contact creation for meeting scheduling}
+        \resumeItem{Developed comprehensive favorites system across CRM entities using Angular, C\#, and SQL Server, implementing star-based UI with Material Design and user-level database architecture}
+        \resumeItem{Engineered drag-and-drop prospect list management system with pagination, order management, and contact search functionality using Angular and RESTful APIs}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\textbf{Video Editor} $|$ \emph{MyDeen}}
+      {Oct 2025 -- Dec 2025}
+      {Part-time}{Remote}
+      \resumeItemListStart
+        \resumeItem{Designed faith-inspired videos for social media marketing and app content}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\textbf{Math Tutor} $|$ \emph{Mathnasium -- The Math Learning Center}}
+      {Jan 2023 -- Jul 2024}
+      {Part-time}{Garner, NC}
+      \resumeItemListStart
+        \resumeItem{Delivered personalized instruction to groups of up to three students, adapting lessons to address specific learning gaps and styles, resulting in improved student understanding and confidence}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\textbf{Engineering Intern} $|$ \emph{NC Soil and Water Conservation Division (NCDA\&CS)}}
+      {May 2023 -- Jul 2023}
+      {North Carolina Department of Agriculture and Consumer Services}{Raleigh, NC}
+      \resumeItemListStart
+        \resumeItem{Assisted in identifying and mapping watershed boundaries using GIS software like ArcMap, contributing to conservation planning and resource management}
+        \resumeItem{Performed calculations to estimate water runoff in various terrains and land uses using EFH-2 software to support flood prevention and soil conservation efforts}
+        \resumeItem{Designed pond dams for agricultural and conservation purposes using Civil3D}
+        \resumeItem{Analyzed spatial and hydrological data using WinPond}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{General Skills}{: Video Editing, Web Development, Graphic Design, Microsoft Word \& PowerPoint, AI Automation, Tech Support} \\
+     \textbf{Languages}{: C\#, TypeScript, JavaScript, Java, Python, HTML, CSS/SCSS} \\
+     \textbf{Frameworks \& Technologies}{: Angular, .NET Core, ASP.NET Web API, Node.js, React, Bootstrap} \\
+     \textbf{Databases \& Cloud}{: SQL Server, Google Cloud, Hangfire} \\
+     \textbf{APIs \& Integration}{: REST APIs, Gmail API, Calendly API, Graph API, OAuth 2.0, Webhooks, Pub/Sub} \\
+     \textbf{Developer Tools}{: Git, Visual Studio, VS Code, Postman, Azure DevOps, Jenkins}
+    }}
+ \end{itemize}
+
+%-----------LICENSES & CERTIFICATIONS-----------
+\section{Licenses \& Certifications}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Certified SOLIDWORKS Associate -- Mechanical Design Certification}{Issued Jul 2023}
+      {Dassault Syst\`emes}{}
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {NC State University}{Expected Graduation -- December 2026}
+      {Bachelor of Science in Computer Science, GPA: 3.71, Year: Senior}{Raleigh, NC}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} SW Development, Java, C, MySQL Database Management, Intro to Data Science, Operating Systems, Software Security, Senior Design, Physics, Chemistry, Calculus, Economics, Business}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}
