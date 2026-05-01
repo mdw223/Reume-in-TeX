@@ -118,7 +118,6 @@
       \resumeItemListStart
         \resumeItem{Architected and delivered production-grade full-stack applications for clients using React, TypeScript, Python/FastAPI, and PostgreSQL with Docker containerization and automated CI/CD deployment}
         \resumeItem{Built secure PDF viewer DRM system (blinkDoc) with server-side rasterization, dynamic watermarking, JWT-based authentication, and cloud storage integration via Cloudflare R2}
-        \resumeItem{Developed Islamic Calendar Sync platform with OAuth 2.0 authentication, live ICS feed subscriptions, offline-first PWA architecture using IndexedDB, and comprehensive unit testing (85\%+ coverage)}
         \resumeItem{Implemented automated deployment pipelines using GitHub Actions, VPS hosting, and GitHub Pages for split frontend/backend hosting architecture}
         \resumeItem{Designed RESTful APIs with comprehensive middleware stack including rate limiting, request/response sanitization, structured logging, and security hardening (CORS, httpOnly cookies, PBKDF2 hashing)}
       \resumeItemListEnd
